@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="android:listViewStyle">@style/ListView</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_sub_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="btnSub" parent="Button">
+        <item name="android:minHeight">@dimen/btn_sub_minheight</item>
+        <item name="android:layout_margin">@dimen/btn_sub_margin</item>
+        <item name="android:textSize">@dimen/btn_sub_size</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv_label</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="tvContent" parent="TextView">
+        <item name="android:minHeight">@dimen/btn_sub_minheight</item>
+        <item name="android:layout_marginLeft">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginRight">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginTop">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginBottom">@dimen/btn_sub_margin</item>
+        <item name="android:textSize">@dimen/tv_content_size</item>
+        <item name="android:textColor">@color/tv_content</item>
+    </style>
+
+    <style name="tvLabel" parent="tvContent">
+        <item name="android:textSize">@dimen/tv_label_size</item>
+        <item name="android:textColor">@color/tv_label</item>
+    </style>
+
+    <style name="tvTitle" parent="tvContent">
+        <item name="android:textSize">@dimen/tv_title_size</item>
+        <item name="android:textColor">@color/tv_title</item>
+    </style>
+
+    <style name="etContent" parent="tvContent">
+        <item name="android:background">@drawable/item_notes</item>
+        <item name="android:paddingLeft">@dimen/btn_sub_margin</item>
+        <item name="android:paddingRight">@dimen/btn_sub_margin</item>
+        <item name="android:paddingTop">@dimen/btn_sub_margin</item>
+        <item name="android:paddingBottom">@dimen/btn_sub_margin</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="etTitle" parent="etContent">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginTop">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginRight">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginBottom">@dimen/btn_sub_margin</item>
+    </style>
+
+    <style name="line_h">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:background">@color/divide</item>
+        <item name="android:layout_marginLeft">@dimen/btn_sub_margin</item>
+        <item name="android:layout_marginRight">@dimen/btn_sub_margin</item>
+    </style>
+
+    <!--Title标题栏-->
+    <style name="Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:textColor">@color/title</item>
+    </style>
+
+    <style name="TitleBtn" parent="Title">
+        <item name="android:padding">@dimen/btn_sub_margin</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="TitleBtnBack" parent="TitleBtn">
+        <item name="android:text">@string/title_return</item>
+    </style>
+</resources>

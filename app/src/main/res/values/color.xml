@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#ffaaaaaa</color>
+    <color name="background">#ffeeeeee</color>
+
+    <color name="tv_label">#ffaaaaaa</color>
+    <color name="tv_content">#ff777777</color>
+    <color name="tv_title">#ff1d1d1d</color>
+
+    <color name="btn_sub_p">#ff9a5fb7</color>
+    <color name="btn_sub_n">#ffaa66cc</color>
+
+    <color name="divide">#ffdddddd</color>
+</resources>

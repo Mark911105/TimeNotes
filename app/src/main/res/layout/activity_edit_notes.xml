@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout style="@style/Title">
+
+        <Button
+                style="@style/TitleBtnBack"
+                android:onClick="onBackClick"/>
+        <Button
+                style="@style/TitleBtn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="@string/title_save"
+                android:onClick="onSaveClick"/>
+    </RelativeLayout>
+
+    <View style="@style/line_h"/>
+
+    <EditText
+            android:id="@+id/etTitle"
+            style="@style/etTitle"
+            android:layout_marginBottom="@dimen/no_margin"
+            android:hint="@string/edit_notes_hint_title"
+            />
+
+    <EditText
+            android:id="@+id/etContent"
+            style="@style/etContent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+    <View style="@style/line_h"/>
+
+    <TextView
+            android:id="@+id/tvTime"
+            style="@style/tvLabel"
+            android:textSize="14sp"
+            android:layout_marginBottom="@dimen/no_margin"
+            android:text="@string/modify_time_label"/>
+
+    <Button
+            android:id="@+id/btnTime"
+            style="@style/btnSub"
+            android:text="选择提示时间"
+            android:onClick="onSelectTime"
+            />
+</LinearLayout>
